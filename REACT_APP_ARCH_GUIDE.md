@@ -2,6 +2,49 @@
 
 This file defines basic architectural consepts that are adviced to be used to in the applications that use React + Typescript + Redux + Axios.
 
+To give you a bit of a glance on the app structure we are aiming at:
+
+```
+project/
+|- src/
+|  |- actions/
+|  |  |- authActions.ts
+|  |- components/
+|  |  |- carbonShell.tsx
+|  |  |- carbonHeader.tsx
+|  |  |- carbonFooter.tsx
+|  |- models/
+|  |  |- requestError.ts
+|  |  |- userToken.ts
+|  |  |- userCredentialsDto.ts
+|  |- pages/
+|  |  |- auth/
+|  |  |  |- login.tsx
+|  |  |  |- logout.tsx
+|  |  |  |- components/
+|  |  |  |  |- loginForm.tsx
+|  |  |- home/
+|  |  |  |- home.tsx
+|  |- reducers/
+|  |  |- authReducer.ts
+|  |  |- index.ts
+|  |- store/
+|  |  |- axiosStore.ts
+|  |  |- historyStore.ts
+|  |  |- store.ts
+|  |- styles/
+|  |  |- index.scss
+|  |- utils/
+|  |  |- paths.ts
+|  |  |- constants.ts
+|  |  |- actionUtils.ts
+|  |- index.tsx
+|  |- react-app-env.d.ts
+|- .env
+|- package.json
+|- tsconfig.json
+```
+
 ## Defining Redux
 
 Redux has several parts to be defined by the developer in the application source code, such as:
