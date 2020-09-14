@@ -6,7 +6,7 @@ Welcome to my personal **Typescript & React** application guidelines. In this pr
 
 - [Typescript Code-Style Guide](TS_GUIDELINES.md)
 - React App Architecture Guide
-- React Redux Guide
+- [React Redux Guide](REACT_REDUX_GUIDELINES.md)
 - [Basic React stack](#basic-react-stack)
 - [Useful tools for React and TS](#useful-tools-for-react-app-development-with-typescript)
 
